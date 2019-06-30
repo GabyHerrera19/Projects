@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Ejemplo HTML5">
+	<meta name="keywords" content="HTML5, CSS3, JavaScript">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Paint</title>
+	<link rel="stylesheet" href="estilo.css">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/zkreations/SheetSlider/master/dist/sheetslider.min.css"/>
+	<script type="text/javascript" src="script.js"></script>
+	
+</head>
+<header>
+	<div class="title">
+		<h1>Aplicattion<br/>Paint</h1>
+	</div>
+</header>
+<body id="paint-app" >
+	
+	<canvas id="miCanvas" width="1000" height="450" style="border:2px solid dimgray;">
+		Su navegador no es compatible con Canvas.
+	</canvas>
+	<br>
+
+	<div id= "fondo">
+		<input type="button" id = "button" value="Lapiz" onclick="herramienta = 'lapiz' "><img src="icon/drawing.png">
+		<input type="button" id = "button" value="Borrador" onclick="herramienta = 'borrador' "><img src="icon/eraser.png">
+		<input type="button" id = "button" value="Linea" onclick="herramienta = 'linea' "><img src="icon/line.png">
+		<input type="button" id = "button" value="Texto" onclick="herramienta = 'texto' "><img src="icon/texto.png"><br><br>
+
+		<input type="range" onchange="tamano = this.value" min="10" max="100" step="any"><br>
+		
+		<input type="color" onload="color_princ = this.value" onchange="color_princ = this.value">
+		<input type="button" value="Limpiar" id = "limpiar">
+
+		<a id="descargar">
+		<input  type="button" value="Guardar imagen">
+		</a>
+	</div>
+	
+</body>
+</html>

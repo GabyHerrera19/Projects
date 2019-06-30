@@ -1,0 +1,166 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Formulario de Regstro</title>
+	<link rel="stylesheet" type="text/css" href="view.css" media="all">
+	<script type="text/javascript" src="view.js"></script>
+	<script type="text/javascript" src="calendar.js"></script>
+</head>
+
+<body id="main_body">
+
+	<img id="top" src="top.png" alt="">
+	<div id="form_container">
+
+		<h1><a>Formulario de Registro</a></h1>
+		<form id="form_62869" class="appnitro" enctype="multipart/form-data" method="post" action="">
+			<div class="form_description">
+				<h2>Formulario de Registro</h2>
+				<p>Formulario para registrarse</p>
+			</div>
+			<ul>
+
+				<li id="li_1">
+					<label class="description" for="element_1">Nombre: </label>
+					<div>
+						<input id="element_1" name="element_1" class="element text medium" type="text" maxlength="255" value="" />
+					</div>
+					<p class="guidelines" id="guide_1"><small>Ingrese su nombre</small></p>
+				</li>
+				<li id="li_2">
+					<label class="description" for="element_2">Dirección: </label>
+					<div>
+						<input id="element_2" name="element_2" class="element text large" type="text" maxlength="255" value="" />
+					</div>
+					<p class="guidelines" id="guide_2"><small>Ingrese su dirección</small></p>
+				</li>
+				<li id="li_9">
+					<label class="description" for="element_9">País: </label>
+					<div>
+						<select class="element select medium" id="element_9" name="element_9">
+							<option value="" selected="selected"></option>
+							<option value="1">Ecuador</option>
+							<option value="2">España</option>
+							<option value="3">Colombia</option>
+							<option value="4">Venezuela</option>
+							<option value="5">Perú</option>
+							<option value="6">Chile</option>
+							<option value="7">Panamá</option>
+							<option value="8">México</option>
+							<option value="9">Argentina</option>
+							<option value="10">Uruguay</option>
+							<option value="11">Paraguay</option>
+							<option value="12">Bolivia</option>
+
+						</select>
+					</div>
+				</li>
+				<li id="li_10">
+					<label class="description" for="element_10">Género </label>
+					<span>
+						<input id="element_10_1" name="element_10_1" class="element checkbox" type="checkbox" value="1" />
+						<label class="choice" for="element_10_1">Masculino</label>
+						<input id="element_10_2" name="element_10_2" class="element checkbox" type="checkbox" value="1" />
+						<label class="choice" for="element_10_2">Femenino</label>
+						<input id="element_10_3" name="element_10_3" class="element checkbox" type="checkbox" value="1" />
+						<label class="choice" for="element_10_3">Otro</label>
+
+					</span>
+				</li>
+				<li id="li_3">
+					<label class="description" for="element_3">Fecha de nacimiento: </label>
+					<span>
+						<input id="element_3_2" name="element_3_2" class="element text" size="2" maxlength="2" value="" type="text">
+						/
+						<label for="element_3_2">DD</label>
+					</span>
+					
+					<span>
+						<input id="element_3_1" name="element_3_1" class="element text" size="2" maxlength="2" value="" type="text">
+						/
+						<label for="element_3_1">MM</label>
+					</span>
+					
+					<span>
+						<input id="element_3_3" name="element_3_3" class="element text" size="4" maxlength="4" value="" type="text">
+						<label for="element_3_3">YYYY</label>
+					</span>
+
+					<span id="calendar_3">
+						<img id="cal_img_3" class="datepicker" src="calendar.gif" alt="Pick a date.">
+					</span>
+					<script type="text/javascript">
+						Calendar.setup({
+							inputField: "element_3_3",
+							baseField: "element_3",
+							displayArea: "calendar_3",
+							button: "cal_img_3",
+							ifFormat: "%B %e, %Y",
+							onSelect: selectDate
+						});
+					</script>
+
+				</li>
+				<li id="li_4">
+					<label class="description" for="element_4">Edad: </label>
+					<div>
+						<input id="element_4" name="element_4" class="element text medium" type="text" maxlength="255" value="" />
+					</div>
+				</li>
+				<li id="li_5">
+					<label class="description" for="element_5">Email </label>
+					<div>
+						<input id="element_5" name="element_5" class="element text medium" type="text" maxlength="255" value="" />
+					</div>
+				</li>
+				<li id="li_6">
+					<label class="description" for="element_6">Sitio Web: </label>
+					<div>
+						<input id="element_6" name="element_6" class="element text medium" type="text" maxlength="255"
+							value="http://" />
+					</div>
+				</li>
+				<li id="li_7">
+					<label class="description" for="element_7">Comentario: </label>
+					<div>
+						<textarea id="element_7" name="element_7" class="element textarea medium"></textarea>
+					</div>
+				</li>
+				<li id="li_11">
+					<label class="description" for="element_11">Acepto los términos y condiciones </label>
+					<span>
+						<input id="element_11_1" name="element_11_1" class="element checkbox" type="checkbox" value="1" />
+						<label class="choice" for="element_11_1">Acepto</label>
+
+					</span>
+				</li>
+				<li id="li_12">
+					<label class="description" for="element_12">Enviarme notificaciones por e-mail </label>
+					<span>
+						<input id="element_12_1" name="element_12_1" class="element checkbox" type="checkbox" value="1" />
+						<label class="choice" for="element_12_1">Si</label>
+
+					</span>
+				</li>
+				<li id="li_8">
+					<label class="description" for="element_8">Adjuntar hoja de vida </label>
+					<div>
+						<input id="element_8" name="element_8" class="element file" type="file" />
+					</div>
+				</li>
+
+				<li class="buttons">
+					<input type="hidden" name="form_id" value="62869" />
+
+					<input id="saveForm" class="button_text" type="submit" name="submit" value="Enviar" />
+				</li>
+			</ul>
+		</form>
+	</div>
+	<img id="bottom" src="bottom.png" alt="">
+</body>
+
+</html>
